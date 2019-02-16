@@ -21,6 +21,8 @@ class m190216_132022_works extends Migration
             'skils' => $this ->string(),
             'salary' => $this ->float()
             ]); 
+            $this->addForeignKey('skils', 'works', 'skils',
+            'skils', 'id', 'CASCADE');
 
     }
 
